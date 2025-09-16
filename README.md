@@ -14,6 +14,18 @@ The project includes a working implementation of eSewa payment integration with 
 - Sample product images included
 - Clean and intuitive UI
 
+## Demo Screenshots
+
+Here are the sample product images used in this project:
+
+<p align="center">
+  <img src="assets/photos/photo1.jpg" width="200" />
+  <img src="assets/photos/photo2.jpg" width="200" />
+  <img src="assets/photos/photo3.jpg" width="200" />
+  <img src="assets/photos/photo4.jpg" width="200" />
+</p>
+
+---
 
 ## Setup Instructions
 
@@ -27,7 +39,8 @@ dependencies:
 ```
 
 Then run:
-```
+
+```bash
 flutter pub get
 ```
 
@@ -40,7 +53,7 @@ Add internet permission and intent filters in `android/app/src/main/AndroidManif
 
 <application>
     <!-- Other application configurations -->
-    
+
     <activity
         android:name="com.esewa.android.sdk.payment.ESewaPaymentActivity"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
@@ -70,6 +83,8 @@ flutter:
     - assets/photos/photo3.jpg
     - assets/photos/photo4.jpg
 ```
+
+---
 
 ## Usage
 
@@ -116,6 +131,8 @@ EsewaFlutterSdk.initPayment(
 );
 ```
 
+---
+
 ## Testing
 
 For testing purposes, use the following test credentials:
@@ -125,8 +142,11 @@ For testing purposes, use the following test credentials:
 - Environment: `Environment.test`
 
 Use these test payment details:
+
 - Mobile Number: `9800000000`
 - OTP: `123456`
+
+---
 
 ## Important Notes
 
@@ -135,6 +155,8 @@ Use these test payment details:
 3. Test thoroughly in both sandbox and live environments
 4. Ensure proper error handling for network issues
 
+---
+
 ## Troubleshooting
 
 - If payment fails, check your internet connection
@@ -142,9 +164,13 @@ Use these test payment details:
 - Ensure callback URL is properly configured
 - Check that all required permissions are set in AndroidManifest.xml and Info.plist
 
+---
+
 ## Support
 
 For issues related to eSewa integration, refer to the official [eSewa documentation](https://developer.esewa.com.np) or create an issue in this repository.
+
+---
 
 ## License
 
